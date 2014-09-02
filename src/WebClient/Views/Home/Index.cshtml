@@ -1,0 +1,13 @@
+﻿<h2>DEMO</h2>
+
+<button id="error">Throw Error</button>
+
+@section scripts {
+    <script type="text/javascript">
+        $(function() {
+            $("#error").click(function() {
+                $.post("/home/throwerror", function(data) {});
+            });
+        });
+    </script>
+}
